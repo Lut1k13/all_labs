@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dao.HelloController">
+   <children>
+      <TableView fx:id="table" layoutX="22.0" layoutY="28.0" prefHeight="293.0" prefWidth="311.0">
+      </TableView>
+      <TextField fx:id="time_field" layoutX="400.0" layoutY="60.0" />
+      <TextField fx:id="target_field" layoutX="400.0" layoutY="110.0" />
+       <TextField fx:id="comment_fild" layoutX="400.0" layoutY="160.0" />
+      <Label layoutX="460.0" layoutY="40.0" text="Время" />
+      <Label layoutX="460.0" layoutY="95.0" text="Цель" />
+       <Label layoutX="440.0" layoutY="145.0" text="Комментарий" />
+      <Button layoutX="453.0" layoutY="200.0" mnemonicParsing="false" text="Ввод" onAction="#Add"/>
+      <Button layoutX="20.0" layoutY="355.0" mnemonicParsing="false" text="Следующий" onAction="#Next"/>
+      <Button layoutX="120.0" layoutY="355.0" mnemonicParsing="false" text="Предыдущий" onAction="#Previos"/>
+      <Button layoutX="220.0" layoutY="355.0" mnemonicParsing="false" text="Обновить" onAction="#Update"/>
+    
+
+   </children>
+</AnchorPane>

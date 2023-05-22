@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_2.HelloController">
+   <children>
+      <VBox alignment="CENTER" layoutX="270.0" layoutY="28.0" prefHeight="84.0" prefWidth="134.0">
+         <children>
+            <Label text="Число сторон" />
+            <TextField fx:id="value1" />
+            <Button fx:id="drawButton" mnemonicParsing="false" onAction="#drawShape" text="Отрисовать" />
+         </children>
+      </VBox>
+      <Canvas fx:id="canvas" height="518.0" layoutY="152.0" width="595.0" />
+      <ListView fx:id="list" onMouseClicked="#addShape" prefHeight="140.0" prefWidth="200.0" />
+      <ColorPicker layoutX="445.0" layoutY="51.0" fx:id="color" />
+   </children>
+</AnchorPane>
